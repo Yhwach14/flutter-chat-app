@@ -2,6 +2,10 @@
 
 A real-time cross-platform chat application built with **Flutter** and **Firebase**. This project demonstrates state management, real-time database integration, and secure user authentication.
 
+## Demo
+<img width="1280" height="2856" alt="untitled" src="https://github.com/user-attachments/assets/ae310ff9-a29f-4ff9-ada4-599cdcd96fcf" />
+
+
 ## Features
 
 * **Real-time Messaging:** Messages sync instantly across all devices using Firestore Streams.
