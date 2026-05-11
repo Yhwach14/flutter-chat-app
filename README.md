@@ -1,16 +1,35 @@
-# chat_app
+# Flutter-Chat-app
 
-A new Flutter project.
+A real-time cross-platform chat application built with **Flutter** and **Firebase**. This project demonstrates state management, real-time database integration, and secure user authentication.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+* **Real-time Messaging:** Messages sync instantly across all devices using Firestore Streams.
+* **User Authentication:** Secure signup and login flow via Firebase Auth.
+* **Dynamic UI:** Optimized chat bubbles that group messages from the same user for a clean aesthetic.
+* **Adaptive Avatars:** Intelligent logic that displays user-specific images or a local fallback placeholder to optimize cloud resources.
+* **Reverse-Chronological Feed:** Messages are displayed in a familiar bottom-to-top list format.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* **Frontend:** [Flutter](https://flutter.dev/) (Dart)
+* **Backend/Database:** [Cloud Firestore](https://firebase.google.com/docs/firestore)
+* **Authentication:** [Firebase Auth](https://firebase.google.com/docs/auth)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architecture & Logic Highlights
+
+### Efficient Image Handling
+To keep the project lean, the application implements a safe fallback mechanism for user profile pictures. Instead of relying purely on cloud storage, the logic checks for valid image URLs and defaults to a local asset when data is missing.
+
+## Setup & Installation
+
+Follow these steps to get a local copy of the project up and running.
+
+### 1. Prerequisites
+* [Flutter SDK](https://docs.flutter.dev/get-started/install) (Latest Stable Version)
+* A [Firebase](https://console.firebase.google.com/) account
+
+### 2. Clone the Repository
+```bash
+git clone https://github.com/Yhwach14/flutter-chat-app.git
+cd flutter-chat-app
